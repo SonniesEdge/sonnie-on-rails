@@ -1,1 +1,0 @@
-# sonnie-on-rails
