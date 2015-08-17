@@ -2,7 +2,10 @@ Rails.application.routes.draw do
 
   root 'application#goodbye'
 
-
+  namespace :blog do
+    resources :articles, path: '', only: [:index, :show]
+  end
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
